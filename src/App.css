@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: inherit;
+  justify-content: center;
+  margin-top: 30px;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.a{
+  border: #61dafb 4px solid;
+  margin-inline: 10px;
+  height: 50vh;
+  width: 30vw;
+  background-image: url('https://static8.depositphotos.com/1000128/871/i/600/depositphotos_8712051-stock-photo-rows-of-gold-bars.jpg');
+  background-size: cover;
+  color: yellow;
+
+}
+.b{
+  border: #61dafb 4px solid;
+  margin-inline: 10px;
+  height: 50vh;
+  width: 30vw;
+  background-image: url('https://blog.providentmetals.com/wp-content/uploads/2019/01/stack-of-silver-bars.jpg');
+  background-size: cover;
+  color: blue;
+}
+.c{
+  border: #61dafb 4px solid;
+  margin-inline: 10px;
+  height: 50vh;
+  width: 30vw;
+  background-image: url('https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1297107058/image_1297107058.jpg?io=getty-c-crop-4-3');
+  background-size: cover;
+  color: green;
+}
