@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style1.css">
+	<title>Login/Signup</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		<a class="navbar-brand" href="http://localhost:3000/">Stock Exchange</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="http://localhost:3000/">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<div class="a" style="margin-left: 1000px;">
+					<form action="https://www.google.com/search" method="GET">
+						<input type="text" name="q" placeholder="Google search">
+					</form>
+				</div>
+		</div>
+	</nav>
+</head>
+
+<body>
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+			<path
+				d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+		</symbol>
+	</svg>
+	<div class="alert alert-primary d-flex align-items-center" role="alert">
+		<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+			<use xlink:href="#info-fill" />
+		</svg>
+		<div>
+			Welcome to the World of Trading
+		</div>
+		<button style="margin-left: 1200px" type="button" class="btn-close" data-bs-dismiss="alert"
+			aria-label="Close"></button>
+	</div>
+	<div class="container1">
+		<div class="tabs">
+			<ul>
+				<li id="register"><a>Register</a></li>
+				<li id="login"><a>Login</a></li>
+			</ul>
+		</div>
+		<div class="forms">
+			<div class="register">
+				<p>Sign up free with in seconds.</p>
+
+				<form method="post" name="register" action="connect.php">
+					<input class="field" name="uname" required type="text" placeholder="Username" />
+					<input class="field" name="email" required type="email" placeholder="myusername@domain.com" />
+					<input id="p1" class="field" name="pass" required type="password" placeholder="Password"
+						onchange="form1.p2.pattern=this.value;" />
+					<input id="p2" class="field" name="pass_confirm" required type="password"
+						placeholder="Rewrite Password" required /><span id="meassages" style="color: red;"></span>
+					<input type="submit" onclick="checkpass()" value="Sign Up" />
+				</form>
+			</div>
+
+			<div class="login">
+				<p>SignIn in your account.</p>
+
+				<form method="post" name="register" action="login.php">
+					<input class="field" name="email" required type="email" placeholder="* myusername@domain.com" />
+					<input class="field" name="pass" required type="password" placeholder="* Password" />
+					<input type="checkbox" name="terms"> <em>Keep me logged in </em> <input type="submit"
+						value="Login" />
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$('#register').on('click', function () {
+			$('.register').siblings().hide();
+			$('.register').slideToggle();
+		});
+		$('#login').on('click', function () {
+			$('.login').siblings().hide();
+			$('.login').slideToggle();
+		});
+	</script>
+</body>
+</html>

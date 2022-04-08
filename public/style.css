@@ -1,0 +1,57 @@
+body{
+    background-image: url('green.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#green{
+    width: auto;
+    height: auto;
+}
+#butt{
+    margin-top: 250px;
+    margin-left: 500px;
+    
+}
+
+#gold{
+    background-color: gold;
+    width: 510px;
+    height: 50px;
+    border-radius:30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    
+}
+#gold:hover{
+    background-color: #fcff3e;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgb(236, 222, 18),0 17px 50px 0 rgb(251, 255, 20);
+}
+#silver{
+    background-color: silver;
+    width: 510px;
+    height: 50px;
+    border-radius:30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#silver:hover{
+    background-color: #f0e4e4;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgb(121, 121, 118),0 17px 50px 0 rgb(133, 133, 118);
+}
+#platinum{
+    background-color: paleturquoise;
+    width: 510px;
+    height: 50px;
+    border-radius:30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#platinum:hover{
+    background-color: rgb(155, 253, 253);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgb(35, 196, 190),0 17px 50px 0 rgb(15, 163, 196);
+}
+

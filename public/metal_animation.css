@@ -1,0 +1,83 @@
+.circle1 {
+    background: url(https://d13yacurqjgara.cloudfront.net/users/212457/screenshots/2212523/yo.jpg) gold;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .circle1:hover {
+    border-radius:0;  
+    cursor: pointer;
+  }
+  
+  .text {
+    color: black;
+    font-size: large;
+    opacity: 0;
+    text-align: center;
+    padding-top: 0px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .circle1:hover .text {
+    padding-top: 40px;
+    opacity: 1;
+  }
+
+  .circle3 {
+    background: url(https://d13yacurqjgara.cloudfront.net/users/212457/screenshots/2212523/yo.jpg) whitesmoke;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .circle3:hover {
+    border-radius:0;  
+    cursor: pointer;
+  }
+  
+  .text {
+    color: black;
+    font-size: large;
+    opacity: 0;
+    text-align: center;
+    padding-top: 0px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .circle3:hover .text {
+    padding-top: 40px;
+    opacity: 1;
+  }
+
+  .circle2 {
+    background: url(https://d13yacurqjgara.cloudfront.net/users/212457/screenshots/2212523/yo.jpg) lightblue;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .circle2:hover {
+    border-radius:0;  
+    cursor: pointer;
+  }
+  
+  .text {
+    color: black;
+    font-size: large;
+    opacity: 0;
+    text-align: center;
+    padding-top: 0px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .circle2:hover .text {
+    padding-top: 40px;
+    opacity: 1;
+  }
+
+
+
